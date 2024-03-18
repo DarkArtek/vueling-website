@@ -1,0 +1,21 @@
+$scrollbar-track-color: #4D4D4D !default;
+$scrollbar-track-width: 15px !default;
+$scrollbar-thumb-color: #fecc01 !default;
+$scrollbar-thumb-color-hover: #898900 !default;
+
+html {
+  &::-webkit-scrollbar {
+    width: $scrollbar-track-width;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $scrollbar-track-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-thumb-color;
+    &:hover {
+      background-color: $scrollbar-thumb-color-hover;
+    }
+  }
+}
